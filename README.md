@@ -4,6 +4,11 @@
 
 [Program -3 Wap for Calculation using methods and additional classes](#assi-3)
 
+[Program -4 Wap to add two distances where each distance is given in m,cm and mm](#assi-4)
+
+[Program -5 Wap to add two distances where each distance is given in m and cm](#assi-5)
+
+
 
 
 ## assi-1
@@ -182,6 +187,42 @@ public class AddDistance
 ## assi-5
 
 ```
+class Distance
+{
+    int m, cm;
+}
 
+public class AddDistance
+{
+    public static void main(String args[])
+    {
+        Distance d1 = new Distance();
+        Distance d2 = new Distance();
+        Distance sum = new Distance();
+
+        d1.m = 3;
+        d1.cm = 70;
+
+        d2.m = 2;
+        d2.cm = 50;
+
+        sum.m = d1.m + d2.m;
+        sum.cm = d1.cm + d2.cm;
+
+        if(sum.cm >= 100)
+        {
+            sum.m = sum.m + 1;
+            sum.cm = sum.cm - 100;
+        }
+
+        System.out.println("Total Distance = " + sum.m + " m " + sum.cm + " cm");
+    }
+}
+```
+
+## assi-6
+```
+
+```
 
     
