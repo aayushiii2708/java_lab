@@ -1,2 +1,187 @@
-# java_lab
-My first repository on GitHub
+[Program -1 Wap for calculator](#assi-1)
+
+[Program -2 Wap demonstrating forloop](#assi-2)
+
+[Program -3 Wap for Calculation using methods and additional classes](#assi-3)
+
+
+
+## assi-1
+```
+public class Code {
+    public static void main(String[] args)
+    {
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+        add(a,b);
+        multiply(a,b);
+        divide(a,b);
+        subtract(a,b);
+        modulus(a,b);
+    }
+    //Addition of numbers
+    public static void add(int a,int b)
+    {
+        System.out.print("The addition of the numbers is:");
+        System.out.println(a+b);
+    }
+    //Multiplication of numbers
+    public static void multiply(int a,int b)
+    {
+        System.out.print("The multiplication of the numbers is:");
+        System.out.println(a*b);
+    }
+    //Division of numbers
+    public static void divide(int a,int b)
+    {
+        System.out.print("The division of the numbers is:");
+        System.out.println(a/b);
+    }
+    //Subtraction of numbers
+    public static void subtract(int a,int b)
+    {
+        System.out.print("The subtraction of the numbers is:");
+        System.out.println(a-b);
+    }
+    //Modulus of numbers
+    public static void modulus(int a,int b)
+    {
+        System.out.print("The modulus of the numbers is:");
+        System.out.println(a%b);
+    }
+}
+```
+
+<img width="391" height="152" alt="image" src="https://github.com/user-attachments/assets/8fecea76-4e40-43ca-bd6b-82a8088b606c" />
+
+
+
+## assi-2
+```
+public class forloop {
+    public static void main(String[] args)
+    {
+    int n = 5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            System.out.print("*");
+        }
+        System.out.println("\n");
+    }
+    
+}
+}
+```
+
+
+<img width="326" height="201" alt="image" src="https://github.com/user-attachments/assets/f0e50219-4c4c-4305-8f87-27fb6d3c4e29" />
+
+## assi-3
+```
+
+// Additional class
+class Calculator {
+
+    // Method for addition
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method for subtraction
+    int subtract(int a, int b) {
+        return a - b;
+    }
+
+    // Method for multiplication
+    int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // Method for division
+    int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+// Main class
+public class ArithmeticOperations {
+    public static void main(String[] args) {
+
+        Calculator calc = new Calculator();
+
+        int a = 20;
+        int b = 10;
+
+        System.out.println("Addition = " + calc.add(a, b));
+        System.out.println("Subtraction = " + calc.subtract(a, b));
+        System.out.println("Multiplication = " + calc.multiply(a, b));
+        System.out.println("Division = " + calc.divide(a, b));
+    }
+}
+```
+
+## assi-4
+```
+class Distance
+{
+    int m, cm, mm;
+
+    void input(int meter, int centi, int milli)
+    {
+        m = meter;
+        cm = centi;
+        mm = milli;
+    }
+
+    void add(Distance d1, Distance d2)
+    {
+        mm = d1.mm + d2.mm;
+        cm = d1.cm + d2.cm;
+        m = d1.m + d2.m;
+
+        if(mm >= 10)
+        {
+            cm = cm + mm/10;
+            mm = mm % 10;
+        }
+
+        if(cm >= 100)
+        {
+            m = m + cm/100;
+            cm = cm % 100;
+        }
+    }
+
+    void display()
+    {
+        System.out.println(m + " m " + cm + " cm " + mm + " mm");
+    }
+}
+
+public class AddDistance
+{
+    public static void main(String args[])
+    {
+        Distance d1 = new Distance();
+        Distance d2 = new Distance();
+        Distance d3 = new Distance();
+
+        d1.input(2,50,8);
+        d2.input(3,60,7);
+
+        d3.add(d1,d2);
+
+        System.out.print("Total Distance = ");
+        d3.display();
+    }
+}
+```
+
+## assi-5
+
+```
+
+
+    
